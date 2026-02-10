@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Putri Indah Ramadhani</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .cv {
+      width: 900px;
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* LEFT SIDE */
+    .left {
+      background: #243b53;
+      color: #ffffff;
+      padding: 30px 20px;
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile h1 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid rgba(255,255,255,0.4);
+      padding-bottom: 5px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+      padding: 40px;
+      color: #333333;
+    }
+
+    .right h2 {
+      font-size: 18px;
+      color: #243b53;
+      border-bottom: 3px solid #243b53;
+      display: inline-block;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .experience {
+      margin-bottom: 25px;
+    }
+
+    .experience h4 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .experience span {
+      font-size: 13px;
+      color: #777777;
+    }
+
+    .bar {
+      background: #dddddd;
+      height: 6px;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 15px;
+    }
+
+    .bar div {
+      height: 6px;
+      background: #243b53;
+      border-radius: 4px;
+      width: 0;
+      transition: 1s;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      border: none;
+      background: #243b53;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv">
+
+  <!-- LEFT -->
+  <div class="left">
+    <div class="profile">
+      <img src="foto.jpg" alt="Profile Photo" />
+      <h1>PUTRI INDAH RAMADHANI</h1>
+      <p>WEB DEVELOPER</p>
+    </div>
+
+    <div class="section">
+      <h3>ABOUT ME</h3>
+      <p style="font-size:14px; line-height:1.6;">
+       I am a TRPL student who is interested in web development and software engineering.
+I am used to creating responsive and interactive websites using HTML, CSS, and JavaScript.
+
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>CONTACT</h3>
+      <ul>
+        <li>📞 08xxxxxxxx</li>
+        <li>✉️ putri@email.com</li>
+        <li>📍 Indonesia</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>LANGUAGE</h3>
+      <ul>
+        <li>English</li>
+        <li>Indonesian</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>EXPERTISE</h3>
+      <ul>
+        <li>Management Skills</li>
+        <li>Creativity</li>
+        <li>Digital Marketing</li>
+        <li>Negotiation</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+    <h2>EXPERIENCE</h2>
+
+    <div class="experience">
+      <h4>Web Development Project</h4>
+      <span>2024 – Now | Tasikmalaya</span>
+      <p>Developed responsive and interactive websites for academic assignments
+    using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="experience">
+      <h4>Student Organization Website</h4>
+      <span>2024 – Now | Politeknik Manahijul Huda</span>
+      <p>Designed and managed simple websites for student activities
+    and documentation.</p>
+    </div>
+
+    <h2>EDUCATION</h2>
+    <div class="experience">
+      <h4>Politeknik Manahijul Huda</h4>
+      <span>TRPL – 2024 – Now</span>
+      <p>Technology of Software Engineering</p>
+    </div>
+
+    <h2>SKILLS SUMMARY</h2>
+    <p>HTML</p>
+    <div class="bar"><div id="html"></div></div>
+    <p>CSS</p>
+    <div class="bar"><div id="css"></div></div>
+    <p>JavaScript</p>
+    <div class="bar"><div id="js"></div></div>
+
+    <button onclick="animateSkill()">Show Skills</button>
+  </div>
+
+</div>
+
+<script>
+  function animateSkill() {
+    document.getElementById('html').style.width = '78%';
+    document.getElementById('css').style.width = '81%';
+    document.getElementById('js').style.width = '70%';
+  }
+</script>
+
+</body>
+</html>
